@@ -17,7 +17,7 @@ export default function App() {
   }
   
   const postData = (e) => {
-    axios.post('http://localhost:3000/data', obj)
+    axios.post('https://instagram-backen.onrender.com/data', obj)
       .then(response => {
         console.log(response.data);
       })

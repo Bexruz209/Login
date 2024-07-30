@@ -8,13 +8,13 @@ export default function card_comp() {
   const [card, setCard] = useState([])
 
   const getAllData = () => {
-    axios.get("http://localhost:3000/data").then(res => {
+    axios.get("https://instagram-backen.onrender.com/data").then(res => {
       setCard(res.data);
     })
   }
 
   const deleteData = (a) => {
-    axios.delete(`http://localhost:3000/data/${a}`)
+    axios.delete(`https://instagram-backen.onrender.com/data/${a}`)
       .then(response => {
         alert(`Deleteasas ${a}`);
       })
