@@ -24,7 +24,7 @@ export default function App() {
       .catch(error => {
         console.error("Error sending data: ", error);
       });
-  }
+    }
 
 
   return (
@@ -41,9 +41,9 @@ export default function App() {
                 </Form.Text>
               </Form.Group>
 
-              <Form.Group className="mb-3" controlId="formBasicPassword">
+                <Form.Group className="mb-3" controlId="formBasicPassword">
                 <Form.Label>Description</Form.Label>
-                <Form.Control onChange={(e) => setDescription(e.target.value)} type="text" placeholder="description" />
+                <Form.Control onChange={(e) => setDescription(e.target.value)} type="text" placeholder="Description" />
                 <Form.Text className="text-muted" >
                   Iltimos to'liq to'ldiring
                 </Form.Text>
